@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: cadetblue;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 305px;
+}
+
+.shape-container {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.shape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5em;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.buttons {
+    margin: auto;
+}
+
+.colors button {
+    border: 1px solid cadetblue;
+}
+
+.controls button, .controls input {
+    margin: 5px;
+    padding: 5px;
+}

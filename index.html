@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shape Editor</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="shape-container" id="shapeContainer"></div>
+
+      <div class="controls">
+        <div class="buttons">
+        <button onclick="selectShape('circle')">Круг</button>
+        <button onclick="selectShape('square')">Квадрат</button>
+        </div>
+        <div class="colors">
+        <button
+          onclick="changeColor('#E32636')"
+          style="background-color: #e32636; color: white"
+        >
+          Красный
+        </button>
+        <button
+          onclick="changeColor('#FDE910')"
+          style="background-color: #fde910; color: black"
+        >
+          Желтый
+        </button>
+        <button
+          onclick="changeColor('#138808')"
+          style="background-color: #138808; color: white"
+        >
+          Зеленый
+        </button>
+        <button
+          onclick="changeColor('#1560BD')"
+          style="background-color: #1560bd; color: white"
+        >
+          Синий
+        </button>
+        </div>
+        <div class="text">
+        <input type="text" id="textInput" placeholder="Введите текст" />
+        <button onclick="addText()">Добавить текст</button>
+        </div>
+        <button onclick="clearShape()">Очистить</button>
+      </div>
+    </div>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
